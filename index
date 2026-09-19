@@ -1,0 +1,58 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kebijakan Privasi - LatihPintar</title><style>
+body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#202733;line-height:1.7}
+header{background:linear-gradient(135deg,#315ed0,#5b7ff0);color:#fff;padding:45px 20px}
+.wrap{max-width:900px;margin:auto}
+main{padding:25px 20px 60px}
+.card{background:#fff;border:1px solid #e2e7f0;border-radius:14px;padding:28px;margin-bottom:18px}
+h1{margin:0 0 8px}h2{color:#273c75}a{color:#315ed0}
+nav{margin-top:18px}nav a{color:#fff;text-decoration:none;margin-right:18px;font-weight:bold}
+.small{color:#687386;font-size:14px}.note{background:#eef4ff;border-left:4px solid #3f6ee8;padding:14px 18px}
+footer{text-align:center;color:#687386;padding:25px}
+</style></head><body>
+<header><div class="wrap"><h1>Kebijakan Privasi</h1><div>Latihan. Jawab. Tingkatkan.</div>
+<nav><a href="./">Kebijakan Privasi</a><a href="./terms.html">Syarat &amp; Ketentuan</a></nav></div></header>
+<main class="wrap">
+<section class="card"><p class="small">Terakhir diperbarui: 20 September 2026</p>
+<p>Kebijakan Privasi ini menjelaskan bagaimana <strong>LatihPintar</strong> menangani informasi ketika aplikasi digunakan.</p>
+<p>LatihPintar adalah aplikasi latihan soal edukasi yang memungkinkan pengguna memilih kategori, mengerjakan soal, melihat skor, dan melihat pembahasan.</p></section>
+
+<section class="card"><h2>1. Informasi yang Digunakan</h2>
+<p>LatihPintar dirancang untuk menggunakan data seminimal mungkin agar fitur latihan soal dapat berjalan.</p>
+<ul><li>Data kategori dan soal latihan yang ditampilkan kepada pengguna.</li><li>Jawaban pengguna selama sesi latihan untuk menghitung hasil.</li><li>Hasil latihan seperti skor, jumlah benar, jumlah salah, jumlah soal, dan kategori apabila fitur penyimpanan hasil digunakan.</li></ul>
+<p>LatihPintar tidak meminta akses ke kontak, SMS, panggilan telepon, kamera, mikrofon, atau lokasi perangkat untuk fitur utama aplikasi.</p></section>
+
+<section class="card"><h2>2. Data Pribadi</h2>
+<p>Pada versi aplikasi yang tidak menggunakan akun pengguna, LatihPintar tidak memerlukan nama lengkap, alamat rumah, nomor telepon, atau kontak perangkat untuk menggunakan fitur latihan soal.</p>
+<p>Jika fitur aplikasi berubah dan memerlukan data pribadi, kebijakan ini akan diperbarui untuk menjelaskan data dan tujuan penggunaannya.</p></section>
+
+<section class="card"><h2>3. Layanan Backend</h2>
+<p>LatihPintar menggunakan <strong>Supabase</strong> sebagai layanan backend untuk menyediakan dan menyimpan data yang diperlukan aplikasi, seperti kategori, soal, dan hasil latihan.</p>
+<p>Data yang dikirim ke layanan tersebut digunakan untuk menyediakan fungsi aplikasi yang relevan dan tunduk pada ketentuan penyedia layanan tersebut.</p></section>
+
+<section class="card"><h2>4. Penggunaan Data</h2>
+<ul><li>Menampilkan kategori dan soal.</li><li>Memproses jawaban.</li><li>Menghitung skor dan hasil latihan.</li><li>Menampilkan pembahasan.</li><li>Menjaga fungsi dan keandalan aplikasi.</li></ul>
+<p>Data tidak digunakan untuk menjual informasi pribadi pengguna kepada pihak lain.</p></section>
+
+<section class="card"><h2>5. Penyimpanan dan Keamanan</h2>
+<p>Kami berupaya menggunakan langkah teknis yang wajar untuk melindungi data yang digunakan aplikasi. Namun, tidak ada metode penyimpanan atau transmisi melalui internet yang dapat dijamin aman 100%.</p></section>
+
+<section class="card"><h2>6. Anak-Anak</h2>
+<p>LatihPintar merupakan aplikasi edukasi yang ditujukan untuk kegiatan latihan soal anak sekolah. Aplikasi dirancang untuk meminimalkan pengumpulan informasi pribadi dan tidak memerlukan data kontak perangkat untuk menjalankan fitur latihan soal.</p>
+<p>Orang tua atau wali yang memiliki pertanyaan mengenai penggunaan data dapat menghubungi pengembang melalui informasi kontak pengembang di Google Play.</p></section>
+
+<section class="card"><h2>7. Berbagi Data</h2>
+<p>LatihPintar tidak menjual data pribadi pengguna. Data dapat diproses oleh layanan pihak ketiga yang diperlukan untuk menjalankan fungsi aplikasi, seperti layanan backend yang digunakan aplikasi.</p></section>
+
+<section class="card"><h2>8. Penghapusan Data</h2>
+<p>Jika aplikasi menyimpan hasil latihan tanpa akun pengguna, pengelolaan dan penghapusan data dilakukan melalui mekanisme yang tersedia pada versi aplikasi atau oleh pengembang.</p>
+<p>Untuk pertanyaan mengenai data yang mungkin dapat dikaitkan dengan pengguna, silakan hubungi pengembang melalui alamat kontak yang tercantum di Google Play.</p></section>
+
+<section class="card"><h2>9. Perubahan Kebijakan</h2>
+<p>Kebijakan Privasi dapat diperbarui apabila terjadi perubahan pada fitur, teknologi, atau cara aplikasi menangani data. Versi terbaru akan dipublikasikan pada halaman ini.</p></section>
+
+<section class="card"><h2>10. Hubungi Pengembang</h2>
+<div class="note">Untuk pertanyaan mengenai Kebijakan Privasi atau penggunaan data, silakan gunakan email kontak pengembang yang tercantum pada halaman LatihPintar di Google Play.</div></section>
+</main><footer>&copy; 2026 LatihPintar. Semua hak dilindungi.</footer>
+</body></html>
