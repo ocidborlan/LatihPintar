@@ -24,33 +24,34 @@ footer{text-align:center;color:#687386;padding:25px}
 <li>Data kategori dan soal latihan yang ditampilkan kepada pengguna.</li>
 <li>Jawaban pengguna selama sesi latihan untuk menghitung hasil.</li>
 <li>Hasil latihan seperti skor, jumlah benar, jumlah salah, jumlah soal, dan kategori.</li>
-<li>Jika pengguna secara sukarela memilih untuk menyimpan hasil ke peringkat online, nama tampilan dan foto profil yang dipilih pengguna dapat diproses untuk fitur tersebut.</li>
-<li>Aplikasi dapat menggunakan identifier internal untuk menghubungkan data hasil dan profil peringkat pada perangkat yang sama.</li>
+<li>Jika pengguna secara sukarela memilih untuk menyimpan hasil ke peringkat online, nama tampilan yang diberikan pengguna dapat diproses untuk fitur tersebut.</li>
+<li>Aplikasi dapat menggunakan identifier internal perangkat untuk menghubungkan data hasil dan profil peringkat pada perangkat yang sama.</li>
+<li>Aplikasi menyediakan daftar avatar yang dikelola oleh pengembang melalui server. Avatar tersebut adalah aset aplikasi, bukan foto atau gambar yang diunggah oleh pengguna.</li>
 </ul>
-<p>LatihPintar tidak meminta akses ke kontak, SMS, panggilan telepon, mikrofon, atau lokasi perangkat untuk fitur utama aplikasi.</p></section>
+<p>LatihPintar tidak meminta akses ke galeri/foto pengguna, kontak, SMS, panggilan telepon, mikrofon, kamera, atau lokasi perangkat untuk fitur utama aplikasi.</p></section>
 
-<section class="card"><h2>2. Peringkat Online dan Data Profil</h2>
+<section class="card"><h2>2. Peringkat Online dan Avatar</h2>
 <p>Fitur peringkat online bersifat opsional. Hasil latihan tidak otomatis dipublikasikan ke peringkat hanya karena pengguna menyelesaikan latihan.</p>
-<p>Jika pengguna memilih <strong>Simpan ke Peringkat</strong>, pengguna dapat memasukkan nama tampilan dan memilih foto profil. Nama tampilan dan informasi hasil yang diperlukan untuk peringkat dapat disimpan di backend dan ditampilkan pada peringkat kepada pengguna lain.</p>
-<p>Foto profil bersifat opsional. Jika pengguna tidak memilih foto, aplikasi dapat menggunakan avatar bawaan dan tidak perlu mengunggah foto pengguna.</p>
-<p>Jika pengguna memilih <strong>Lewati</strong>, nama dan foto tersebut tidak dikirim ke server untuk pembuatan entri peringkat online. Hasil dapat tetap disimpan secara lokal sesuai fitur aplikasi.</p></section>
+<p>Jika pengguna memilih <strong>Simpan ke Peringkat</strong>, pengguna dapat memasukkan nama tampilan dan memilih avatar yang tersedia di dalam aplikasi. Nama tampilan dan informasi hasil yang diperlukan untuk peringkat dapat disimpan di backend dan ditampilkan pada peringkat kepada pengguna lain.</p>
+<p>Avatar dipilih dari daftar avatar yang disediakan dan dikelola oleh pengembang melalui Supabase. Pengguna tidak mengunggah foto pribadi dan tidak dapat menambahkan foto dari galeri melalui fitur ini.</p>
+<p>Jika pengguna memilih <strong>Lewati</strong>, nama dan pilihan avatar tersebut tidak digunakan untuk membuat entri peringkat online berdasarkan pilihan tersebut. Hasil dapat tetap disimpan secara lokal sesuai fitur aplikasi.</p></section>
 
-<section class="card"><h2>3. Penyimpanan Foto</h2>
-<p>Foto yang dipilih untuk fitur peringkat online dapat disimpan menggunakan layanan penyimpanan <strong>Supabase Storage</strong>. Aplikasi menggunakan referensi lokasi file untuk menghubungkan foto dengan data peringkat dan tidak menyimpan foto sebagai teks Base64 di tabel hasil.</p>
-<p>Foto yang dipilih untuk ditampilkan pada peringkat dapat terlihat oleh pengguna lain sesuai cara fitur peringkat online ditampilkan.</p></section>
+<section class="card"><h2>3. Penyimpanan Avatar</h2>
+<p>Gambar avatar aplikasi disimpan menggunakan layanan penyimpanan <strong>Supabase Storage</strong>. Database menyimpan referensi avatar yang digunakan untuk menghubungkan pilihan avatar dengan gambar yang ditampilkan.</p>
+<p>Avatar merupakan aset aplikasi yang disediakan oleh pengembang dan bukan konten pribadi yang diunggah pengguna.</p></section>
 
 <section class="card"><h2>4. Data Pribadi</h2>
-<p>Untuk menggunakan fitur latihan soal biasa, pengguna tidak perlu memberikan nama lengkap, alamat rumah, nomor telepon, atau kontak perangkat.</p>
-<p>Nama tampilan dan foto profil hanya digunakan untuk fitur peringkat online apabila pengguna memilih untuk menyimpan hasil ke peringkat. Pengguna dapat memilih untuk melewati penyimpanan online.</p>
-<p>Pengguna sebaiknya tidak memasukkan informasi pribadi yang tidak diperlukan ke dalam nama tampilan atau foto profil.</p></section>
+<p>Untuk menggunakan fitur latihan soal biasa, pengguna tidak perlu memberikan nama lengkap, alamat rumah, nomor telepon, foto pribadi, atau kontak perangkat.</p>
+<p>Nama tampilan hanya digunakan untuk fitur peringkat online apabila pengguna memilih untuk menyimpan hasil ke peringkat. Pengguna dapat memilih untuk melewati penyimpanan online.</p>
+<p>Pengguna sebaiknya tidak memasukkan informasi pribadi yang tidak diperlukan ke dalam nama tampilan.</p></section>
 
 <section class="card"><h2>5. Layanan Backend</h2>
-<p>LatihPintar menggunakan <strong>Supabase</strong> sebagai layanan backend untuk menyediakan dan menyimpan data yang diperlukan aplikasi, seperti kategori, soal, dan data hasil yang digunakan oleh fitur online.</p>
-<p>Foto untuk peringkat online dapat diproses melalui Supabase Storage. Data yang dikirim ke layanan tersebut digunakan untuk menyediakan fungsi aplikasi yang relevan dan tunduk pada ketentuan penyedia layanan tersebut.</p></section>
+<p>LatihPintar menggunakan <strong>Supabase</strong> sebagai layanan backend untuk menyediakan dan menyimpan data yang diperlukan aplikasi, seperti kategori, soal, avatar, dan data hasil yang digunakan oleh fitur online.</p>
+<p>Gambar avatar aplikasi dapat disediakan melalui Supabase Storage. Data yang dikirim ke layanan tersebut digunakan untuk menyediakan fungsi aplikasi yang relevan dan tunduk pada ketentuan penyedia layanan tersebut.</p></section>
 
 <section class="card"><h2>6. Penggunaan Data</h2>
 <ul>
-<li>Menampilkan kategori dan soal.</li>
+<li>Menampilkan kategori, avatar, dan soal.</li>
 <li>Memproses jawaban.</li>
 <li>Menghitung skor dan hasil latihan.</li>
 <li>Menampilkan pembahasan.</li>
@@ -65,7 +66,7 @@ footer{text-align:center;color:#687386;padding:25px}
 
 <section class="card"><h2>8. Anak-Anak</h2>
 <p>LatihPintar merupakan aplikasi edukasi untuk kegiatan latihan soal anak sekolah. Aplikasi dirancang untuk meminimalkan pengumpulan informasi pribadi untuk penggunaan latihan biasa.</p>
-<p>Fitur peringkat online dapat menampilkan nama tampilan dan, apabila dipilih, foto profil kepada pengguna lain. Pengguna atau orang tua/wali sebaiknya mempertimbangkan informasi yang akan ditampilkan sebelum memilih <strong>Simpan ke Peringkat</strong>.</p>
+<p>Fitur peringkat online dapat menampilkan nama tampilan yang dipilih pengguna dan avatar bawaan aplikasi kepada pengguna lain. Avatar tersebut bukan foto pribadi pengguna.</p>
 <p>Orang tua atau wali yang memiliki pertanyaan mengenai penggunaan data dapat menghubungi pengembang melalui informasi kontak pengembang di Google Play.</p></section>
 
 <section class="card"><h2>9. Berbagi Data</h2>
