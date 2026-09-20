@@ -1,4 +1,3 @@
-
 <!doctype html><html lang="id"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Kebijakan Privasi - LatihPintar</title><style>
@@ -17,43 +16,70 @@ footer{text-align:center;color:#687386;padding:25px}
 <main class="wrap">
 <section class="card"><p class="small">Terakhir diperbarui: 20 September 2026</p>
 <p>Kebijakan Privasi ini menjelaskan bagaimana <strong>LatihPintar</strong> menangani informasi ketika aplikasi digunakan.</p>
-<p>LatihPintar adalah aplikasi latihan soal edukasi yang memungkinkan pengguna memilih kategori, mengerjakan soal, melihat skor, dan melihat pembahasan.</p></section>
+<p>LatihPintar adalah aplikasi latihan soal edukasi yang memungkinkan pengguna memilih kategori, mengerjakan soal, melihat skor, melihat pembahasan, dan secara opsional menyimpan hasil tertentu ke peringkat online.</p></section>
 
 <section class="card"><h2>1. Informasi yang Digunakan</h2>
 <p>LatihPintar dirancang untuk menggunakan data seminimal mungkin agar fitur latihan soal dapat berjalan.</p>
-<ul><li>Data kategori dan soal latihan yang ditampilkan kepada pengguna.</li><li>Jawaban pengguna selama sesi latihan untuk menghitung hasil.</li><li>Hasil latihan seperti skor, jumlah benar, jumlah salah, jumlah soal, dan kategori apabila fitur penyimpanan hasil digunakan.</li></ul>
-<p>LatihPintar tidak meminta akses ke kontak, SMS, panggilan telepon, kamera, mikrofon, atau lokasi perangkat untuk fitur utama aplikasi.</p></section>
+<ul>
+<li>Data kategori dan soal latihan yang ditampilkan kepada pengguna.</li>
+<li>Jawaban pengguna selama sesi latihan untuk menghitung hasil.</li>
+<li>Hasil latihan seperti skor, jumlah benar, jumlah salah, jumlah soal, dan kategori.</li>
+<li>Jika pengguna secara sukarela memilih untuk menyimpan hasil ke peringkat online, nama tampilan dan foto profil yang dipilih pengguna dapat diproses untuk fitur tersebut.</li>
+<li>Aplikasi dapat menggunakan identifier internal untuk menghubungkan data hasil dan profil peringkat pada perangkat yang sama.</li>
+</ul>
+<p>LatihPintar tidak meminta akses ke kontak, SMS, panggilan telepon, mikrofon, atau lokasi perangkat untuk fitur utama aplikasi.</p></section>
 
-<section class="card"><h2>2. Data Pribadi</h2>
-<p>Pada versi aplikasi yang tidak menggunakan akun pengguna, LatihPintar tidak memerlukan nama lengkap, alamat rumah, nomor telepon, atau kontak perangkat untuk menggunakan fitur latihan soal.</p>
-<p>Jika fitur aplikasi berubah dan memerlukan data pribadi, kebijakan ini akan diperbarui untuk menjelaskan data dan tujuan penggunaannya.</p></section>
+<section class="card"><h2>2. Peringkat Online dan Data Profil</h2>
+<p>Fitur peringkat online bersifat opsional. Hasil latihan tidak otomatis dipublikasikan ke peringkat hanya karena pengguna menyelesaikan latihan.</p>
+<p>Jika pengguna memilih <strong>Simpan ke Peringkat</strong>, pengguna dapat memasukkan nama tampilan dan memilih foto profil. Nama tampilan dan informasi hasil yang diperlukan untuk peringkat dapat disimpan di backend dan ditampilkan pada peringkat kepada pengguna lain.</p>
+<p>Foto profil bersifat opsional. Jika pengguna tidak memilih foto, aplikasi dapat menggunakan avatar bawaan dan tidak perlu mengunggah foto pengguna.</p>
+<p>Jika pengguna memilih <strong>Lewati</strong>, nama dan foto tersebut tidak dikirim ke server untuk pembuatan entri peringkat online. Hasil dapat tetap disimpan secara lokal sesuai fitur aplikasi.</p></section>
 
-<section class="card"><h2>3. Layanan Backend</h2>
-<p>LatihPintar menggunakan <strong>Supabase</strong> sebagai layanan backend untuk menyediakan dan menyimpan data yang diperlukan aplikasi, seperti kategori, soal, dan hasil latihan.</p>
-<p>Data yang dikirim ke layanan tersebut digunakan untuk menyediakan fungsi aplikasi yang relevan dan tunduk pada ketentuan penyedia layanan tersebut.</p></section>
+<section class="card"><h2>3. Penyimpanan Foto</h2>
+<p>Foto yang dipilih untuk fitur peringkat online dapat disimpan menggunakan layanan penyimpanan <strong>Supabase Storage</strong>. Aplikasi menggunakan referensi lokasi file untuk menghubungkan foto dengan data peringkat dan tidak menyimpan foto sebagai teks Base64 di tabel hasil.</p>
+<p>Foto yang dipilih untuk ditampilkan pada peringkat dapat terlihat oleh pengguna lain sesuai cara fitur peringkat online ditampilkan.</p></section>
 
-<section class="card"><h2>4. Penggunaan Data</h2>
-<ul><li>Menampilkan kategori dan soal.</li><li>Memproses jawaban.</li><li>Menghitung skor dan hasil latihan.</li><li>Menampilkan pembahasan.</li><li>Menjaga fungsi dan keandalan aplikasi.</li></ul>
+<section class="card"><h2>4. Data Pribadi</h2>
+<p>Untuk menggunakan fitur latihan soal biasa, pengguna tidak perlu memberikan nama lengkap, alamat rumah, nomor telepon, atau kontak perangkat.</p>
+<p>Nama tampilan dan foto profil hanya digunakan untuk fitur peringkat online apabila pengguna memilih untuk menyimpan hasil ke peringkat. Pengguna dapat memilih untuk melewati penyimpanan online.</p>
+<p>Pengguna sebaiknya tidak memasukkan informasi pribadi yang tidak diperlukan ke dalam nama tampilan atau foto profil.</p></section>
+
+<section class="card"><h2>5. Layanan Backend</h2>
+<p>LatihPintar menggunakan <strong>Supabase</strong> sebagai layanan backend untuk menyediakan dan menyimpan data yang diperlukan aplikasi, seperti kategori, soal, dan data hasil yang digunakan oleh fitur online.</p>
+<p>Foto untuk peringkat online dapat diproses melalui Supabase Storage. Data yang dikirim ke layanan tersebut digunakan untuk menyediakan fungsi aplikasi yang relevan dan tunduk pada ketentuan penyedia layanan tersebut.</p></section>
+
+<section class="card"><h2>6. Penggunaan Data</h2>
+<ul>
+<li>Menampilkan kategori dan soal.</li>
+<li>Memproses jawaban.</li>
+<li>Menghitung skor dan hasil latihan.</li>
+<li>Menampilkan pembahasan.</li>
+<li>Menyediakan fitur peringkat online jika pengguna memilih untuk menyimpan hasil.</li>
+<li>Menjaga fungsi dan keandalan aplikasi.</li>
+</ul>
 <p>Data tidak digunakan untuk menjual informasi pribadi pengguna kepada pihak lain.</p></section>
 
-<section class="card"><h2>5. Penyimpanan dan Keamanan</h2>
-<p>Kami berupaya menggunakan langkah teknis yang wajar untuk melindungi data yang digunakan aplikasi. Namun, tidak ada metode penyimpanan atau transmisi melalui internet yang dapat dijamin aman 100%.</p></section>
+<section class="card"><h2>7. Penyimpanan dan Keamanan</h2>
+<p>Kami berupaya menggunakan langkah teknis yang wajar untuk melindungi data yang digunakan aplikasi. Namun, tidak ada metode penyimpanan atau transmisi melalui internet yang dapat dijamin aman 100%.</p>
+<p>Data yang disimpan melalui layanan pihak ketiga juga tunduk pada infrastruktur dan kebijakan keamanan penyedia layanan tersebut.</p></section>
 
-<section class="card"><h2>6. Anak-Anak</h2>
-<p>LatihPintar merupakan aplikasi edukasi yang ditujukan untuk kegiatan latihan soal anak sekolah. Aplikasi dirancang untuk meminimalkan pengumpulan informasi pribadi dan tidak memerlukan data kontak perangkat untuk menjalankan fitur latihan soal.</p>
+<section class="card"><h2>8. Anak-Anak</h2>
+<p>LatihPintar merupakan aplikasi edukasi untuk kegiatan latihan soal anak sekolah. Aplikasi dirancang untuk meminimalkan pengumpulan informasi pribadi untuk penggunaan latihan biasa.</p>
+<p>Fitur peringkat online dapat menampilkan nama tampilan dan, apabila dipilih, foto profil kepada pengguna lain. Pengguna atau orang tua/wali sebaiknya mempertimbangkan informasi yang akan ditampilkan sebelum memilih <strong>Simpan ke Peringkat</strong>.</p>
 <p>Orang tua atau wali yang memiliki pertanyaan mengenai penggunaan data dapat menghubungi pengembang melalui informasi kontak pengembang di Google Play.</p></section>
 
-<section class="card"><h2>7. Berbagi Data</h2>
-<p>LatihPintar tidak menjual data pribadi pengguna. Data dapat diproses oleh layanan pihak ketiga yang diperlukan untuk menjalankan fungsi aplikasi, seperti layanan backend yang digunakan aplikasi.</p></section>
+<section class="card"><h2>9. Berbagi Data</h2>
+<p>LatihPintar tidak menjual data pribadi pengguna. Data dapat diproses oleh layanan pihak ketiga yang diperlukan untuk menjalankan fungsi aplikasi, seperti layanan backend dan penyimpanan yang digunakan aplikasi.</p>
+<p>Jika pengguna memilih menyimpan hasil ke peringkat online, informasi yang diperlukan untuk menampilkan peringkat dapat terlihat oleh pengguna lain melalui fitur tersebut.</p></section>
 
-<section class="card"><h2>8. Penghapusan Data</h2>
-<p>Jika aplikasi menyimpan hasil latihan tanpa akun pengguna, pengelolaan dan penghapusan data dilakukan melalui mekanisme yang tersedia pada versi aplikasi atau oleh pengembang.</p>
-<p>Untuk pertanyaan mengenai data yang mungkin dapat dikaitkan dengan pengguna, silakan hubungi pengembang melalui alamat kontak yang tercantum di Google Play.</p></section>
+<section class="card"><h2>10. Penghapusan Data</h2>
+<p>Data lokal dapat dikelola atau dihapus melalui mekanisme yang tersedia pada aplikasi atau dengan menghapus data aplikasi sesuai kemampuan sistem operasi.</p>
+<p>Untuk data yang telah dikirim ke layanan online melalui fitur peringkat, pengguna dapat menghubungi pengembang melalui alamat kontak yang tercantum di Google Play untuk pertanyaan mengenai pengelolaan atau penghapusan data.</p></section>
 
-<section class="card"><h2>9. Perubahan Kebijakan</h2>
+<section class="card"><h2>11. Perubahan Kebijakan</h2>
 <p>Kebijakan Privasi dapat diperbarui apabila terjadi perubahan pada fitur, teknologi, atau cara aplikasi menangani data. Versi terbaru akan dipublikasikan pada halaman ini.</p></section>
 
-<section class="card"><h2>10. Hubungi Pengembang</h2>
+<section class="card"><h2>12. Hubungi Pengembang</h2>
 <div class="note">Untuk pertanyaan mengenai Kebijakan Privasi atau penggunaan data, silakan gunakan email kontak pengembang yang tercantum pada halaman LatihPintar di Google Play.</div></section>
 </main><footer>&copy; 2026 LatihPintar. Semua hak dilindungi.</footer>
 </body></html>
