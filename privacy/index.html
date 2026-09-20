@@ -24,15 +24,16 @@ footer{text-align:center;color:#687386;padding:25px}
 <li>Data kategori dan soal latihan yang ditampilkan kepada pengguna.</li>
 <li>Jawaban pengguna selama sesi latihan untuk menghitung hasil.</li>
 <li>Hasil latihan seperti skor, jumlah benar, jumlah salah, jumlah soal, dan kategori.</li>
-<li>Jika pengguna secara sukarela memilih untuk menyimpan hasil ke peringkat online, nama tampilan yang diberikan pengguna dapat diproses untuk fitur tersebut.</li>
-<li>Aplikasi dapat menggunakan identifier internal perangkat untuk menghubungkan data hasil dan profil peringkat pada perangkat yang sama.</li>
-<li>Aplikasi menyediakan daftar avatar yang dikelola oleh pengembang melalui server. Avatar tersebut adalah aset aplikasi, bukan foto atau gambar yang diunggah oleh pengguna.</li>
+<li>Jika pengguna memilih untuk menyimpan profil dan hasil ke Peringkat online, nama tampilan yang diberikan pengguna dapat diproses untuk fitur tersebut.</li>
+<li>Aplikasi dapat menggunakan identifier internal yang dibuat untuk aplikasi/perangkat tersebut untuk menghubungkan profil dengan hasil latihan pada perangkat yang sama. Identifier ini tidak menggunakan IMEI, nomor seri SIM, nomor seri perangkat, MAC address, SSID, BSSID, IMSI, atau nomor telepon perangkat.</li>
+<li>Avatar yang dipilih pengguna dari daftar avatar yang disediakan aplikasi dapat disimpan sebagai bagian dari profil Peringkat. Avatar tersebut adalah aset aplikasi, bukan foto atau gambar yang diunggah oleh pengguna.</li>
 </ul>
 <p>LatihPintar tidak meminta akses ke galeri/foto pengguna, kontak, SMS, panggilan telepon, mikrofon, kamera, atau lokasi perangkat untuk fitur utama aplikasi.</p></section>
 
 <section class="card"><h2>2. Peringkat Online dan Avatar</h2>
 <p>Fitur peringkat online bersifat opsional. Hasil latihan tidak otomatis dipublikasikan ke peringkat hanya karena pengguna menyelesaikan latihan.</p>
-<p>Jika pengguna memilih <strong>Simpan ke Peringkat</strong>, pengguna dapat memasukkan nama tampilan dan memilih avatar yang tersedia di dalam aplikasi. Nama tampilan dan informasi hasil yang diperlukan untuk peringkat dapat disimpan di backend dan ditampilkan pada peringkat kepada pengguna lain.</p>
+<p>Jika pengguna memilih <strong>Simpan ke Peringkat</strong>, pengguna dapat memasukkan nama tampilan dan memilih avatar yang tersedia di dalam aplikasi. Informasi profil tersebut dapat disimpan bersama informasi hasil latihan yang diperlukan untuk menghubungkan profil dengan hasil dan menampilkan Peringkat.</p>
+<p>Jika pengguna telah memiliki profil Peringkat, nama tampilan dan avatar yang tersimpan dapat digunakan sebagai nilai awal ketika pengguna kembali menggunakan fitur tersebut. Pengguna dapat memperbarui informasi tersebut melalui fitur yang tersedia.</p>
 <p>Avatar dipilih dari daftar avatar yang disediakan dan dikelola oleh pengembang melalui Supabase. Pengguna tidak mengunggah foto pribadi dan tidak dapat menambahkan foto dari galeri melalui fitur ini.</p>
 <p>Jika pengguna memilih <strong>Lewati</strong>, nama dan pilihan avatar tersebut tidak digunakan untuk membuat entri peringkat online berdasarkan pilihan tersebut. Hasil dapat tetap disimpan secara lokal sesuai fitur aplikasi.</p></section>
 
@@ -61,7 +62,9 @@ footer{text-align:center;color:#687386;padding:25px}
 <p>Data tidak digunakan untuk menjual informasi pribadi pengguna kepada pihak lain.</p></section>
 
 <section class="card"><h2>7. Penyimpanan dan Keamanan</h2>
-<p>Kami berupaya menggunakan langkah teknis yang wajar untuk melindungi data yang digunakan aplikasi. Namun, tidak ada metode penyimpanan atau transmisi melalui internet yang dapat dijamin aman 100%.</p>
+<p>Kami berupaya menggunakan langkah teknis yang wajar untuk melindungi data yang digunakan aplikasi, termasuk membatasi akses terhadap data yang diperlukan oleh fitur online.</p>
+<p>Identifier internal aplikasi digunakan untuk menghubungkan profil dengan hasil latihan dan tidak ditampilkan sebagai informasi publik. LatihPintar tidak menggunakan identifier perangkat keras seperti IMEI, nomor seri SIM, MAC address, SSID, BSSID, atau IMSI sebagai identitas profil.</p>
+<p>Namun, tidak ada metode penyimpanan atau transmisi melalui internet yang dapat dijamin aman 100%.</p>
 <p>Data yang disimpan melalui layanan pihak ketiga juga tunduk pada infrastruktur dan kebijakan keamanan penyedia layanan tersebut.</p></section>
 
 <section class="card"><h2>8. Anak-Anak</h2>
@@ -75,7 +78,8 @@ footer{text-align:center;color:#687386;padding:25px}
 
 <section class="card"><h2>10. Penghapusan Data</h2>
 <p>Data lokal dapat dikelola atau dihapus melalui mekanisme yang tersedia pada aplikasi atau dengan menghapus data aplikasi sesuai kemampuan sistem operasi.</p>
-<p>Untuk data yang telah dikirim ke layanan online melalui fitur peringkat, pengguna dapat menghubungi pengembang melalui alamat kontak yang tercantum di Google Play untuk pertanyaan mengenai pengelolaan atau penghapusan data.</p></section>
+<p>Untuk data profil dan hasil yang telah dikirim ke layanan online melalui fitur Peringkat, pengguna dapat menghubungi pengembang melalui alamat kontak yang tercantum di Google Play untuk meminta pengelolaan atau penghapusan data yang terkait dengan profil tersebut.</p>
+</section>
 
 <section class="card"><h2>11. Perubahan Kebijakan</h2>
 <p>Kebijakan Privasi dapat diperbarui apabila terjadi perubahan pada fitur, teknologi, atau cara aplikasi menangani data. Versi terbaru akan dipublikasikan pada halaman ini.</p></section>
